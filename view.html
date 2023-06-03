@@ -20,20 +20,19 @@
         const url = new URL(window.location.href)
         const params = new URLSearchParams(url.search)
 
-        const div = document.getElementById("movieContainer")
+        // Get movies from storage
         const movies = JSON.parse(localStorage.getItem("movies"))
+
+        // Get selected movie from movies array
         const index = movies.map(movie => movie._id).indexOf(params.get(`id`))
         const selectedMovie = movies[index]
-        console.log(selectedMovie)
 
-        
+        // Set movie values on selected ID
         document.getElementById('title').innerHTML = selectedMovie.title
         document.getElementById('poster_url').src = selectedMovie.poster_url
         document.getElementById('description').innerHTML = selectedMovie.description
         document.getElementById('genre').innerHTML = selectedMovie.genre
         document.getElementById('release_date').innerHTML = selectedMovie.release_date
-        
-        
         
         </script>
 </body>
