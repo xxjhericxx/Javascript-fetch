@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const url = 'https://crudcrud.com/api/5686a5fe0a1c4519b803f1903949b788'
+
+        const newProduct = async (name) => {
+            try {
+                const response = await fetch(`${url}/products`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name: name }) // { name } as shorthand
+                })
+
+                // console.log(response)
+
+                if(response.ok) {
+                    const product = await response.json()
+                    console.log(`${product.name} added to the product list`)
+                } else {
+                    console.log('Error: ', response.status)
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        }
+
+        console.log('Creating a new product ....')
+        newProduct('Candy')
+        console.log('Executing others tasks ....')
+    </script>
+</body>
+</html>

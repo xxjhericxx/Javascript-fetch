@@ -1,0 +1,105 @@
+{
+    "movies": [
+        {
+            "title": "Inception",
+            "description": "A skilled thief enters people's dreams to steal valuable information but is given a task to plant an idea instead.",
+            "genre": "Sci-Fi",
+            "release_date": "2010-07-16",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+        },
+        {
+            "title": "The Dark Knight",
+            "description": "Batman faces a chaotic criminal mastermind known as the Joker, who pushes Gotham City into turmoil.",
+            "genre": "Action",
+            "release_date": "2008-07-18",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+        },
+        {
+            "title": "Pulp Fiction",
+            "description": "The lives of various characters, including two hitmen, a mob boss, and a boxer, intertwine in this nonlinear narrative.",
+            "genre": "Crime",
+            "release_date": "1994-10-14",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL75_UY562_CR3,0,380,562_.jpg"
+        },
+        {
+            "title": "The Shawshank Redemption",
+            "description": "A banker is sentenced to life in Shawshank State Penitentiary, where he forms an unlikely friendship with a fellow inmate.",
+            "genre": "Drama",
+            "release_date": "1994-09-23",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+        },
+        {
+            "title": "Fight Club",
+            "description": "An insomniac office worker forms an underground fight club with a soap salesman, leading to a spiral of chaos.",
+            "genre": "Drama",
+            "release_date": "1999-10-15",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_QL75_UX380_CR0,1,380,562_.jpg"
+        },
+        {
+            "title": "The Matrix",
+            "description": "A computer hacker discovers the true nature of reality and joins a rebellion against sentient machines.",
+            "genre": "Sci-Fi",
+            "release_date": "1999-03-31",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+        },
+        {
+            "title": "Forrest Gump",
+            "description": "A simple-minded man recounts his remarkable life journey, which intersects with significant historical events.",
+            "genre": "Drama",
+            "release_date": "1994-07-06",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_QL75_UY562_CR4,0,380,562_.jpg"
+        },
+        {
+            "title": "Goodfellas",
+            "description": "A young man climbs the ranks of the mob under the guidance of a psychopathic mentor.",
+            "genre": "Crime",
+            "release_date": "1990-09-19",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL75_UX380_CR0,3,380,562_.jpg"
+        },
+        {
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "description": "A hobbit, along with a fellowship of diverse beings, embarks on a quest to destroy a powerful ring and save Middle-earth.",
+            "genre": "Adventure",
+            "release_date": "2001-12-19",
+            "poster_url": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_QL75_UX380_CR0,1,380,562_.jpg"
+        }
+    ],
+    "genres": [
+        {
+            "title": "Thriller",
+            "description": "Thriller movies often involve suspenseful and exciting plotlines that keep the audience on the edge of their seats."
+        },
+        {
+            "title": "Sci-Fi",
+            "description": "Sci-Fi movies explore imaginative concepts and futuristic settings, often involving advanced science and technology."
+        },
+        {
+            "title": "Fantasy",
+            "description": "Fantasy movies take audiences into magical or supernatural realms, featuring elements like mythical creatures and epic quests."
+        },
+        {
+            "title": "Mystery",
+            "description": "Mystery movies involve puzzles, enigmas, and suspenseful elements, where characters unravel secrets or solve crimes."
+        },
+        {
+            "title": "War",
+            "description": "War movies depict conflicts and battles, often exploring the impact of war on individuals and societies."
+        },
+        {
+            "title": "Action",
+            "description": "Action movies are packed with thrilling stunts, intense sequences, and heroic characters engaged in high-octane adventures."
+        },
+        {
+            "title": "Comedy",
+            "description": "Comedy movies aim to entertain and amuse through humor and lighthearted storytelling."
+        },
+        {
+            "title": "Crime",
+            "description": "Crime movies revolve around criminal activities, investigations, and the world of organized crime. They often depict heists, robberies, murder mysteries, detective work, and the pursuit of justice."
+        },
+        {
+            "title": "Adventure",
+            "description": "Adventure movies take audiences on thrilling journeys and epic quests."
+        }
+    ]
+}

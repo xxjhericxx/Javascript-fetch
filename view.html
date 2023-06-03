@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Movie</title>
+</head>
+<body style="display: flex;">
+    
+    <img id="poster_url" src="" style="margin: 10px;">
+    <div class="movieContainer" style="margin: 10px;">
+        <h1 id="title" style="margin: 0; padding: 0;"></h1>
+        <p id="release_date" style="margin: 0; padding: 0; font-style: italic;"></p>
+        <p id="description" style="width: 20rem;"></p>
+        <p id="genre" style="margin: 0; padding: 0; font-style: italic;"></p>
+    </div>
+
+    <script>
+        const url = new URL(window.location.href)
+        const params = new URLSearchParams(url.search)
+
+        const div = document.getElementById("movieContainer")
+        const movies = JSON.parse(localStorage.getItem("movies"))
+        const index = movies.map(movie => movie._id).indexOf(params.get(`id`))
+        const selectedMovie = movies[index]
+        console.log(selectedMovie)
+
+        
+        document.getElementById('title').innerHTML = selectedMovie.title
+        document.getElementById('poster_url').src = selectedMovie.poster_url
+        document.getElementById('description').innerHTML = selectedMovie.description
+        document.getElementById('genre').innerHTML = selectedMovie.genre
+        document.getElementById('release_date').innerHTML = selectedMovie.release_date
+        
+        
+        
+        </script>
+</body>
+</html>
