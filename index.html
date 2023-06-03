@@ -82,11 +82,6 @@
                             <input type="date" class="form-control" name="release_date" id="release_date" required>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="poster_url" class="form-label">Poster URL</label>
-                            <input type="text" class="form-control" name="poster_url" id="poster_url" required>
-                        </div>
-
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
@@ -172,7 +167,7 @@
     <!-- JavaScript code -->
     <script>
         // API URL for CRUD operations
-        const url = 'https://crudcrud.com/api/d0097b18b0f14ff9b638144ae569206c'
+        const url = 'https://crudcrud.com/api/4613b976e8814fae9403b6e8c229beb4'
 
         // Function to get genres from API or localStorage
         const getGenres = async () => {
@@ -236,7 +231,7 @@
 
         // Function to get movies from API or localStorage
         const getMovies = async () => {
-            if (localStorage.getItem("moviels") === null) {
+            if (localStorage.getItem("movies") === null) {
                 // Fetch movies from API and store in localStorage
                 await fetch(`${url}/movies`)
                     .then(response => response.json())
@@ -257,7 +252,7 @@
                             <td>
                                 <a href="view.html?id=${movies[i]._id}">${movies[i].title}</a>    
                             </td>
-                            <td>${getGenreTitle(movies[i].genre)}</td>
+                            <td>${movies[i].genre}</td>
                             <td>${movies[i].release_date}</td>
                             <td>
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -301,8 +296,8 @@
                     genre,
                     title,
                     description,
-                    release_date,
-                    poster_url
+                    poster_url,
+                    release_date
                 })
             })
                 .then(response => response.json())
@@ -392,8 +387,8 @@
                     genre,
                     title,
                     description,
-                    release_date,
-                    poster_url
+                    poster_url,
+                    release_date
                 })
             })
                 .then(result => {
