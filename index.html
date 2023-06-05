@@ -87,7 +87,7 @@
 
                         <div class="mb-3">
                             <label for="poster_url" class="form-label">Poster URL</label>
-                            <input type="text" class="form-control" name="poster_url" id="poster_url" required>
+                            <input type="url" class="form-control" name="poster_url" id="poster_url" required>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -129,6 +129,11 @@
                         <div class="mb-3">
                             <label for="updateMovieReleaseDate" class="form-label">Release Date</label>
                             <input type="date" class="form-control" name="updateMovieReleaseDate" id="updateMovieReleaseDate" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="updatePoster_url" class="form-label">Poster URL</label>
+                            <input type="url" class="form-control" name="updatePoster_url" id="updatePoster_url" required>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Update</button>
@@ -328,6 +333,7 @@
             const title = document.getElementById('title').value
             const description = document.getElementById('description').value
             const release_date = document.getElementById('release_date').value
+            const poster_url = document.getElementById('poster_url').value
 
             // Send a POST request to create a new movie
             fetch(`${url}/movies`, {
@@ -356,6 +362,7 @@
                     document.getElementById('title').value = ''
                     document.getElementById('description').value = ''
                     document.getElementById('release_date').value = ''
+                    document.getElementById('poster_url').value = ''
                 })
                 .catch(error => {
                     console.log(error)
@@ -403,6 +410,7 @@
                 document.getElementById('updateMovieTitle').value = selectedMovie.title
                 document.getElementById('updateMovieDescription').value = selectedMovie.description
                 document.getElementById('updateMovieReleaseDate').value = selectedMovie.release_date
+                document.getElementById('updatePoster_url').value = selectedMovie.poster_url
                 
                 const updateMovieModal = bootstrap.Modal.getOrCreateInstance("#updateMovieModal")
                 updateMovieModal.show()
@@ -419,6 +427,8 @@
             const title = document.getElementById('updateMovieTitle').value
             const description = document.getElementById('updateMovieDescription').value
             const release_date = document.getElementById('updateMovieReleaseDate').value
+            const poster_url = document.getElementById('updatePoster_url').value
+            
 
             // Send a POST request to create a new movie
             fetch(`${url}/movies/${id}`, {
@@ -448,6 +458,7 @@
                     document.getElementById('updateMovieTitle').value = ''
                     document.getElementById('updateMovieDescription').value = ''
                     document.getElementById('updateMovieReleaseDate').value = ''
+                    document.getElementById('updatePoster_url').value = ''
                 })
                 .catch(error => {
                     console.log(error)
